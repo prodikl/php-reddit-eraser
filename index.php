@@ -22,8 +22,10 @@ if(!$reddit->isAuthorized($callbackUrl)){
     $reddit->login($callbackUrl);
 } else {
     $user = $reddit->getUser();
+
     echo $user;
-    var_dump($reddit->getUser());
+    print_r($user);
+    var_dump($user);
 
     $comments = $reddit->getHistory($username, "overview");
     var_dump($comments);
