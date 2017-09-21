@@ -8,6 +8,8 @@
 
 require("./vendor/autoload.php");
 
+//phpinfo(); die;
+
 session_start();
 
 $username = "prodikl";
@@ -19,7 +21,11 @@ $reddit = new RedditPhp($clientId, $clientSecret);
 if(!$reddit->isAuthorized($callbackUrl)){
     $reddit->login($callbackUrl);
 } else {
-    $comments = $reddit->getHistory($username, "comments");
+    $user = $reddit->getUser();
+    echo $user;
+    var_dump($reddit->getUser());
+
+    $comments = $reddit->getHistory($username, "overview");
     var_dump($comments);
 }
 
