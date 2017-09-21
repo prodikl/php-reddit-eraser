@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "fb8fd98b58efb6d70f6cc7655dcac927",
+    "content-hash": "dec76113c540a87259782c33a3d4af02",
+    "packages": [
+        {
+            "name": "tkijewski/reddit-php-sdk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tkijewski/reddit-php-sdk.git",
+                "reference": "4ca93c80d6cc1f7fdfb82534cac4fce4aa4c843d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tkijewski/reddit-php-sdk/zipball/4ca93c80d6cc1f7fdfb82534cac4fce4aa4c843d",
+                "reference": "4ca93c80d6cc1f7fdfb82534cac4fce4aa4c843d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "reddit.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathon LeBlanc",
+                    "homepage": "https://github.com/jcleblanc/reddit-php-sdk"
+                },
+                {
+                    "name": "Tim Kijewski",
+                    "homepage": "https://github.com/tkijewski/reddit-php-sdk"
+                }
+            ],
+            "description": "Fork of jcleblanc/reddit-php-sdk with improvements",
+            "homepage": "https://github.com/tkijewski/reddit-php-sdk",
+            "keywords": [
+                "reddit"
+            ],
+            "time": "2017-05-15 16:16:54"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "tkijewski/reddit-php-sdk": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

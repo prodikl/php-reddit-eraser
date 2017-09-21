@@ -1,0 +1,17 @@
+{
+    "name": "prodikl/php-reddit-eraser",
+    "description": "A PHP history eraser",
+    "require": {
+        "tkijewski/reddit-php-sdk": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Keith Larson",
+            "email": "keith@prodikl.com"
+        }
+    ],
+    "autoload": {
+        "classmap" : ["src"]
+    },
+    "minimum-stability": "dev"
+}
