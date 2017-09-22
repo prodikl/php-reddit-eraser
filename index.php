@@ -13,8 +13,8 @@ require("./vendor/autoload.php");
 session_start();
 
 $username = "prodikl";
-$clientId = "7TStDThwNM4XuQ";
-$clientSecret = "Q8QbRXOUdBslK6pUPgt-86LfbuM";
+$clientId = "UIuSqvijmHRmOQ";
+$clientSecret = "zXHqrSzmj62SuQcemEyeM4u_wFY";
 $callbackUrl = "http://localhost/php-reddit-eraser";
 
 $reddit = new RedditPhp($clientId, $clientSecret);
@@ -24,11 +24,11 @@ if(!$reddit->isAuthorized($callbackUrl)){
     $user = $reddit->getUser();
 
     echo $user;
-    print_r($user);
-    var_dump($user);
+    //print_r($user);
+    //var_dump($user);
 
-    $comments = $reddit->getHistory($username, "overview");
-    var_dump($comments);
+    //$comments = $reddit->getHistory($username, "overview");
+    //var_dump($comments);
 }
 
 

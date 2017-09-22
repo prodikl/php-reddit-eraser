@@ -34,6 +34,8 @@ class RedditPhp extends reddit {
             $_SESSION['refreshToken'] = $refreshToken;
 
             $this->setOAuthToken($accessToken);
+
+            header("Location: .");
             return true;
         } else if(array_key_exists("accessToken", $_SESSION)) {
             $accessToken = $_SESSION['accessToken'];
